@@ -1,0 +1,38 @@
+.simpay-checkout-form {
+  .simpay-text-label {
+    display:none;
+  }
+  .simpay-field-wrap {
+    input {
+      display:block;
+      border-radius: 5px !important;
+      width: 100% !important;
+      margin: 5px 0 !important;
+      @media only screen and (min-width: 1525px) {
+        display: inline-block;
+        width: auto !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+      }
+    }
+    textarea {
+      padding:10px;
+      display:block;
+      border-radius: 5px !important;
+      margin: 5px 0 !important;
+      @media only screen and (min-width: 1525px) {
+        display: inline-block;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+      }
+    }
+
+  }
+  .simpay-total-amount-label, .simpay-number-label, .simpay-date-label {
+      font-weight:bold;
+    }
+
+  #simpay-639-text-8, #simpay-1508-text-8 {
+    display:none;
+  }
+}

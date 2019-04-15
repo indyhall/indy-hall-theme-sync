@@ -1,0 +1,77 @@
+//--------------------------------------------------------------
+// HTML Elements
+//--------------------------------------------------------------
+
+::selection {
+	background: $color-yellow; /* WebKit/Blink Browsers */
+	color: black;
+  }
+
+
+//--------------------------------------------------------------
+// Iframes
+//--------------------------------------------------------------
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+} // embed, iframe, object
+
+hr {
+	@include size(auto 1px);
+
+	margin: 0 0 rem(24) 0;
+	background-color: $color-yellow !important;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+} // hr
+
+figure {
+	margin: 0;
+} // figure
+
+//--------------------------------------------------------------
+// Lists
+//--------------------------------------------------------------
+
+ul,
+ol {
+	margin: 0 0 rem(10) rem(24);
+} // ul, ol
+
+ul {
+	list-style: disc;
+} // ul
+
+ol {
+	list-style: decimal;
+} // ol
+
+li > ul,
+li > ol {
+	margin: 0 0 0 rem(24);
+} // li > ul, li > ol
+
+dt {
+	font-weight: 700;
+} // dt
+
+dd {
+	margin: 0 rem(24) rem(24) 0;
+} // dd
+
+//--------------------------------------------------------------
+// Tables
+//--------------------------------------------------------------
+
+table {
+	@include size(100% auto);
+
+	margin: 0 0 rem(24) 0;
+} // table
+
+th {
+	font-weight: 700;
+} // th

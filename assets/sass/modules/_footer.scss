@@ -1,0 +1,63 @@
+//--------------------------------------------------------------
+// Footer
+//--------------------------------------------------------------
+
+.entry-footer {
+	display:none;
+}
+.site-footer {
+	@include span-columns(12);
+	background: #4A4A4A url('assets/images/footer-bg.png');
+	text-align: center;
+	color: white;
+	padding: 20px;
+	overflow: auto;
+}
+
+.footer-widgets {
+	text-align:left;
+	//@include span-columns(12);
+	display: block;
+	@include justify-content(space-evenly);
+	@media only screen and (min-width: 1024px) {
+		display: flex;
+	}
+
+	.footer-1, .footer-2 {
+		@include span-columns(4);
+		width: 100%;
+		display: block;
+
+	  @media only screen and (min-width: 1024px) {
+		//@include span-columns(12);
+			width: 32.5%;
+	  }
+
+		h2 {
+		  border-bottom: solid 1px #FFF;
+	  }
+	}
+	hr {
+		background-color: $color-white !important;
+	}
+}
+
+.site-info {
+	padding-top: 50px;
+	clear:both;
+
+	hr {
+	  display: block;
+	  margin-right: auto;
+	  margin-left: auto;
+	  width: 70px;
+	  height: 4px;
+	  background-color: $color-mineshaft;
+	}
+} // .site-info
+
+.site-info, .site-footer {
+	a, a:link {
+		color: $color-white;
+	  }
+}

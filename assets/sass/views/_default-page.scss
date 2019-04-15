@@ -1,0 +1,102 @@
+.page-template-default, .single, .blog, .error404, .page-all, .page-template-page-pricing {
+    h1 {
+        font-size: 42px !important;
+        line-height: 42px !important;
+        @media only screen and (min-width: 1024px) {
+            font-size: 80px !important;
+            line-height: 80px !important;
+
+        }
+    }
+    .site-content {
+        //width: 100%;
+        //@include clearfix;
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include display(flex);
+        //margin-bottom: rem(75);
+
+        .content-area {
+            //padding-top: rem(64);
+
+        .entry-header {
+            margin: rem(75) 0 rem(20) 0;
+            text-align:center;
+        }
+
+        @include media($tablet-portrait) {
+                @include span-columns(6);
+                @include shift(3);
+        }
+        blockquote {
+            border-left: solid 5px #ccc;
+            padding-left: 20px;
+        }
+
+        hr {
+
+            margin: rem(60) auto;
+        }
+            .entry-content {
+                // display: flex;
+                flex-direction: column;
+
+
+                hr {
+                    clear:both;
+                    width: 70px;
+                    height: 4px;
+                    background-color: $color-link;
+                    align-self: center;
+                  }
+
+                img.alignleft {
+                    @media only screen and (min-width: 1024px) {
+                        display: inline;
+                        float: left;
+                        max-width: 20em;
+                        margin: .5em 2.4em 0.5em -19%
+                    }
+                    display: block;
+                    float: none;
+                    /*width: 80%;*/
+                    margin: 1em auto;
+                  }
+
+                  img.aligncenter {
+                    @media only screen and (min-width: 1024px) {
+                        max-width: 80%;
+                        margin: 1em 10%;
+                    }
+                    display: block;
+                    float: none;
+                    width: 80%;
+                    margin: 15px auto;
+                  }
+
+                  img.alignright {
+                    @media only screen and (min-width: 1024px) {
+                        display: inline;
+                        float: right;
+                        max-width: 15em;
+                        margin: .5em -10% .5em 1.4em;
+                    }
+
+                    display: block;
+                    float: none;
+                    /*width: 80%;*/
+                    margin: 1em auto 2em auto;
+                  }
+
+                  img.size-full {
+                    margin: 1em 10%;
+                    max-width:100%;
+
+                  }
+            }
+        }
+    }
+}
+.page-template-page-pricing .entry-content {
+    margin-top: 0px;
+}

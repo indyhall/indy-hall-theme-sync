@@ -1,0 +1,80 @@
+
+.woocommerce a {
+  box-shadow: none !important;
+}
+
+.product .entry-summary {
+  margin-top: 0;
+}
+
+.product_meta span.sku_wrapper, .product_meta span.posted_in {
+  display: block;
+}
+.product_meta span.posted_in {
+  display: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  display: none;
+}
+
+.product .view-all-articles {
+  display: none;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 150px !important;
+  margin-right: 15px;
+}
+.woocommerce-cart table.cart td {
+  border: none !important;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals tr td, {
+  border-bottom: none !important;
+}
+.woocommerce-checkout-review-order-table tr td {
+  border-bottom: none !important;
+}
+.woocommerce-table--order-details tr td {
+  border-bottom: none !important;
+}
+
+.woocommerce ul#shipping_method {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.woocommerce-order-overview li {
+  float: none !important;
+  border-right: none !important;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals .shipping-calculator-button {
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: .618em 1em;
+  font-weight: 700;
+  border-radius: 3px;
+  left: auto;
+  color: #515151;
+  background-color: #ebe9eb;
+  border: 0;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.woocommerce-billing-fields h3, .woocommerce-shipping-fields h3 {
+  font-size: 1.3em !important;
+}
+
+.woocommerce-order-details #ez-toc-container {
+  display: none;
+}

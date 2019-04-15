@@ -1,0 +1,45 @@
+.pricing-toggle {
+  padding: 10px 0 35px 0;
+  span {
+    display:inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  position:relative;
+}
+
+.switch-toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: #989898;
+  cursor: pointer;
+}
+
+.switch-toggle input {
+  /*display: block;*/
+  display: none;
+  position:absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.switch-toggle div {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #DFDFDF;
+  transition: .1s ease;
+}
+
+.switch-toggle input:checked + div {
+  left: 50%;
+  background-color: #2693E6;
+}
+.switch-toggle.outer div {
+  width: 26px;
+  height: 26px;
+  top: -3px;
+  left: -3px;
+}

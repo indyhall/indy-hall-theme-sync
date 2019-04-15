@@ -1,0 +1,78 @@
+//--------------------------------------------------------------
+// Homepage Template
+//--------------------------------------------------------------
+
+.home, .page-template-page-home {
+    .site-content {
+      @include span-columns(12);
+      @include clearfix;
+    }
+
+    .content-area {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-and-image, .image-and-text {
+      background-repeat: no-repeat !important;
+      background-position: top !important;
+      overflow: auto;
+
+      h2, p, hr {
+        max-width: 600px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+
+      hr {
+        width: 70px;
+        height: 4px;
+        background-color: $color-link;
+      }
+    }
+
+
+    .text-and-image {
+      padding: 50px 0;
+      @media only screen and (min-width: 1024px) {
+        padding: 75px 0;
+        background-position-x: 80% !important;
+      }
+
+      hr {margin-bottom: 10px !important;}
+
+      h2, p, hr {
+        margin: 0 50px;
+        @media only screen and (min-width: 1024px) {
+          margin-left: 150px;
+        }
+      }
+    }
+
+    .image-and-text {
+      padding: 0 0 75px;
+
+      @media only screen and (min-width: 1024px) {
+        background-position-x: 20% !important;
+      }
+
+      hr {margin-bottom: 10px !important;}
+
+      h2, p, hr {
+        margin: 0 50px;
+
+        @media only screen and (min-width: 1024px) {
+          margin-left: 50%;
+        }
+      }
+    }
+  }
+
+  .adp {
+    background: #FFF;
+    .adp-directions {
+      padding: 0 4px;
+    }
+  }

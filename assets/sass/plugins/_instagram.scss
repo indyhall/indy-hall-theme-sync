@@ -1,0 +1,40 @@
+.instagram-media{
+  margin: 0 auto !important;
+}
+.instagram-widget {
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 75px 0;
+
+  .inner-wrap {
+    width: 100%;
+    @media only screen and (min-width: 1024px) {
+      max-width: 980px;
+    }
+  }
+
+  h2 {
+    margin: 0 30px;
+    text-align:left;
+    @media only screen and (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+  a {
+    box-shadow: none !important;
+  }
+  hr {
+    margin: 0 25px 0 30px !important;
+    @media only screen and (min-width: 1024px) {
+      margin: 0 25px 0 10px !important;
+    }
+    width: 70px;
+    height: 4px;
+    background-color: $color-link;
+  }
+  #sbi_load {
+    margin-top:20px
+  }
+}

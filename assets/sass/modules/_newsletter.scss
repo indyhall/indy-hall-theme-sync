@@ -1,0 +1,49 @@
+.newsletter {
+  background: rgba(0, 0, 0, 0.5);
+  padding: rem(10);
+  margin: 0 auto 0 auto;
+  max-width: rem(740);
+  text-align:center;
+  display:block;
+  // ConvertKit Styles
+  .ck_form.ck_naked .ck_form_fields {
+    padding: rem(10);
+  }
+  .ck_subscribe_button {
+    display:block;
+    width: 100% !important;
+    background: $color-yellow !important;
+    color: $color-black !important;
+    text-transform: uppercase;
+    border: 1px solid $color-yellow;
+    border-radius: 5px !important;
+    padding: 9px 30px !important;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal !important;
+    margin-top: 5px !important;
+    @media only screen and (min-width: 1525px) {
+      display: inline-block;
+      width: auto !important;
+    }
+  }
+  .ck_control_group input {
+    display:block;
+    border-radius: 5px !important;
+    width: 100% !important;
+    margin: 5px 0 !important;
+    @media only screen and (min-width: 1525px) {
+      display: inline-block;
+      width: auto !important;
+      margin-right: 10px !important;
+      margin-left: 10px !important;
+    }
+  }
+  .ck_converted_content {
+    background: transparent !important;
+    padding: inherit !important;
+    color: #FFF;
+  }
+
+}

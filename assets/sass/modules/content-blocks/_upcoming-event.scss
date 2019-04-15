@@ -1,0 +1,16 @@
+.upcoming-event {
+      text-align: center;
+      font-size: 1.2em;
+      border-bottom: solid 1px #CCC;
+      overflow: auto;
+      color: $color-dove-gray;
+      padding: 5px 20px;
+
+      p {
+        margin: 1em;
+      }
+      a {
+        color: $color-purple !important;
+        box-shadow: none !important;
+      }
+    }

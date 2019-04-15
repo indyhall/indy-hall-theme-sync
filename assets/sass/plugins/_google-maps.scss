@@ -1,0 +1,31 @@
+#wpgmza_filter_3, #wpgmza_filter_4 {
+  margin-bottom: 15px !important;
+  #wpgmza_filter_select {
+    font-size: 1em;
+    margin-left:10px;
+  }
+}
+
+.wpgmza_markerbox {
+  max-width: 300px;
+}
+.dataTables_length {
+  margin-top: 15px !important;
+  display:none;
+  @media only screen and (min-width: 1024px) {
+    display: inline-block;
+  }
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
+  text-align: center !important;
+
+}
+.dataTables_wrapper .dataTables_filter {
+  margin :10px 0;
+}
+.wpgmza_table_title, .wpgmza_table_category, .wpgmza_table_address {
+  text-align: left;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-shadow: none;
+}

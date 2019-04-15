@@ -1,0 +1,167 @@
+//--------------------------------------------------------------
+// Hero Block
+//--------------------------------------------------------------
+.hero-image {
+  background-size: cover !important;
+  //background-position: 0;
+}
+.hero {
+  display: flex;
+  background: #000 url('assets/images/bright-squares.png');
+  background-size: auto;
+  padding: 10px;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  @include span-columns(12);
+  @media only screen and (min-width: 1024px) {
+    padding: 100px;
+  }
+  .hero-title {
+    font-family: "Bungee Inline", open-sans;
+    font-weight: 100;
+    font-size: 58px;
+    line-height:58px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #FDD505;
+    padding: 20px;
+    font-style: normal;
+    margin: 30px 0 20px;
+    @media only screen and (min-width: 800px) {
+      max-width: 1024px;
+      font-size: 130px;
+      line-height: 130px;
+      margin: 50px auto 20px auto;
+    }
+  }
+  .hero-description {
+    display:none;
+    color: $color-white;
+    text-align: center;
+    font-family: 'Avenir Next Condensed';
+    align-self: center;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem;
+    font-weight: 300;
+    margin: 0;
+    @media only screen and (min-width: 800px) {
+      display: block;
+      margin: 0 auto;
+      max-width: 40%;
+
+    }
+  }
+  .tour-button {
+    margin: -20px auto 20px auto;
+    display: block;
+    @media only screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+  .newsletter {
+    display:none;
+    @media only screen and (min-width: 1024px) {
+    display: block;
+    }
+  }
+  .ck_form.ck_naked {
+    margin: 0 !important;
+  }
+
+  .member-login {
+    display: none;
+    background-color:rgba(253, 213, 5, 0.8);
+    text-align: center;
+    width: 150px;
+    position: fixed;
+    top: 300px;
+    right: -55px;
+    padding: 10px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    @media only screen and (min-width: 1024px) {
+     display:block;
+    }
+    a {
+      box-shadow: none;
+    }
+  }
+
+  .hentry {display: none;}
+
+	// Transparent overlay.
+	// &::after {
+	// 	@include position(absolute, 0 0 null null);
+	// 	@include size(100%);
+
+	// 	//background-color: rgba($color-black, 0.5);
+	// 	content: '';
+	// //	z-index: 2;
+	// } // &:after
+
+	// Content container.
+	&-content {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		min-height: rem(500); // height of hero.
+		position: relative;
+		text-align: center;
+		z-index: 3;
+	} // .hero-content
+
+	// Add padding to description.
+	&-description {
+		// padding-bottom: $gutter * 2;
+	} // .hero-description
+
+} // .hero
+
+a.tour-button {
+  display: block;
+  background: $color-yellow !important;
+  color: $color-black !important;
+  text-transform: uppercase;
+  border: 1px solid $color-yellow;
+  border-radius: 5px;
+  padding: 9px 30px !important;
+  font-size: 12px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold !important;
+}
+.page-tour .tour-button {
+  display: none !important;
+}
+
+
+//-----------------------------------------
+// IE Fixes
+//-----------------------------------------
+.ie .hero {
+
+	// IE seems to have some width issues with flexbox,
+	// the text is rendered wider than its container
+	// and doesn't wrap. This fixes that.
+	.hero-title,
+	.hero-description {
+		width: 100%;
+	} // .hero-title, .hero-description
+
+	// IE11 doesn't do centering with just a min-height,
+	// need to set a specific height instead.
+	.hero-content {
+		@include media($tablet-portrait) {
+			height: rem(500); // height of hero.
+		}
+	} // .hero-content
+} // .ie .hero
